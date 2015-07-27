@@ -1,0 +1,161 @@
+10
+
+dir
+0
+svn://zz1504@10.8.151.215/zz1504/1/%E5%BD%AD%E5%B0%91%E6%AD%A6/FinanceNews%203.0-%E5%9B%BE%E7%89%87%E6%BB%9A%E5%8A%A8/AFNetworking/AFNetworking
+svn://zz1504@10.8.151.215
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5d3329c2-f93a-4d14-bc89-be5018d5e5f8
+
+AFHTTPSessionManager.m
+file
+
+
+
+add
+
+AFURLResponseSerialization.m
+file
+
+
+
+add
+
+AFSecurityPolicy.h
+file
+
+
+
+add
+
+AFNetworking.h
+file
+
+
+
+add
+
+AFSecurityPolicy.m
+file
+
+
+
+add
+
+AFURLSessionManager.h
+file
+
+
+
+add
+
+AFURLConnectionOperation.h
+file
+
+
+
+add
+
+AFHTTPRequestOperationManager.h
+file
+
+
+
+add
+
+AFNetworkReachabilityManager.h
+file
+
+
+
+add
+
+AFURLSessionManager.m
+file
+
+
+
+add
+
+AFURLConnectionOperation.m
+file
+
+
+
+add
+
+AFURLRequestSerialization.h
+file
+
+
+
+add
+
+AFHTTPRequestOperationManager.m
+file
+
+
+
+add
+
+AFHTTPRequestOperation.h
+file
+
+
+
+add
+
+AFNetworkReachabilityManager.m
+file
+
+
+
+add
+
+AFURLRequestSerialization.m
+file
+
+
+
+add
+
+AFHTTPSessionManager.h
+file
+
+
+
+add
+
+AFHTTPRequestOperation.m
+file
+
+
+
+add
+
+AFURLResponseSerialization.h
+file
+
+
+
+add
+

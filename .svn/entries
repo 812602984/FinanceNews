@@ -1,0 +1,980 @@
+10
+
+dir
+0
+svn://zz1504@10.8.151.215/zz1504/1/%E5%BD%AD%E5%B0%91%E6%AD%A6/FinanceNews%203.0-%E5%9B%BE%E7%89%87%E6%BB%9A%E5%8A%A8
+svn://zz1504@10.8.151.215
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5d3329c2-f93a-4d14-bc89-be5018d5e5f8
+
+GData
+dir
+
+
+
+add
+
+PicModel.h
+file
+
+
+
+add
+
+share.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+PicModel.m
+file
+
+
+
+add
+
+search.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+topviewbg.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+NewGData
+dir
+
+
+
+add
+
+RightViewController.xib
+file
+
+
+
+add
+
+AFNetworking
+dir
+
+
+
+add
+
+BaseViewController.h
+file
+
+
+
+add
+
+FinanceNews
+dir
+
+
+
+add
+
+SingleView.h
+file
+
+
+
+add
+
+LZXHelper.h
+file
+
+
+
+add
+
+BaseViewController.m
+file
+
+
+
+add
+
+viewbg.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+default.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+SDWebImage
+dir
+
+
+
+add
+
+SingleView.m
+file
+
+
+
+add
+
+LZXHelper.m
+file
+
+
+
+add
+
+fmdb
+dir
+
+
+
+add
+
+SideViewController.h
+file
+
+
+
+add
+
+label_bg.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+PicScrollView.h
+file
+
+
+
+add
+
+left.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+SideViewController.m
+file
+
+
+
+add
+
+VideoDetailViewController.h
+file
+
+
+
+add
+
+Define.h
+file
+
+
+
+add
+
+PicScrollView.m
+file
+
+
+
+add
+
+NewsModel.h
+file
+
+
+
+add
+
+PicDetailViewController.h
+file
+
+
+
+add
+
+VideoDetailViewController.m
+file
+
+
+
+add
+
+nsstring-hashing
+dir
+
+
+
+add
+
+VideoCell.xib
+file
+
+
+
+add
+
+NewsModel.m
+file
+
+
+
+add
+
+PicDetailViewController.m
+file
+
+
+
+add
+
+ViewWillShow.h
+file
+
+
+
+add
+
+scrollbg.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+SearchViewController.h
+file
+
+
+
+add
+
+EachgoldViewController.h
+file
+
+
+
+add
+
+VideoViewController.h
+file
+
+
+
+add
+
+NewsCell.xib
+file
+
+
+
+add
+
+HeadlineViewController.h
+file
+
+
+
+add
+
+SearchViewController.m
+file
+
+
+
+add
+
+EachgoldViewController.m
+file
+
+
+
+add
+
+VideoViewController.m
+file
+
+
+
+add
+
+HeadlineViewController.m
+file
+
+
+
+add
+
+left_0@2x.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+DBManager.h
+file
+
+
+
+add
+
+FinancialViewController.h
+file
+
+
+
+add
+
+left_4@2x.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+DBManager.m
+file
+
+
+
+add
+
+LZXHelper
+dir
+
+
+
+add
+
+leftviewbg.jpg
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+AbroadViewController.h
+file
+
+
+
+add
+
+left_toggle.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+FinancialViewController.m
+file
+
+
+
+add
+
+collection.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+LeftViewController.h
+file
+
+
+
+add
+
+AbroadViewController.m
+file
+
+
+
+add
+
+LeftViewController.m
+file
+
+
+
+add
+
+video_play@2x.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+SearchResultViewController.h
+file
+
+
+
+add
+
+FinanceNews.xcodeproj
+dir
+
+
+
+add
+
+SearchResultViewController.m
+file
+
+
+
+add
+
+AppListViewController.h
+file
+
+
+
+add
+
+RightViewController.h
+file
+
+
+
+add
+
+videobg.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+AdView.h
+file
+
+
+
+add
+
+AppListViewController.m
+file
+
+
+
+add
+
+startPlay.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+RightViewController.m
+file
+
+
+
+add
+
+left_3@2x.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+VideoDetailViewController.xib
+file
+
+
+
+add
+
+left-0.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+AdView.m
+file
+
+
+
+add
+
+left-1.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+left-2.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+left-3.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+Topbar.h
+file
+
+
+
+add
+
+VideoModel.h
+file
+
+
+
+add
+
+left-4.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+JHRefresh
+dir
+
+
+
+add
+
+CollectionViewController.h
+file
+
+
+
+add
+
+DetailViewController.xib
+file
+
+
+
+add
+
+Topbar.m
+file
+
+
+
+add
+
+VideoModel.m
+file
+
+
+
+add
+
+FinanceNewsTests
+dir
+
+
+
+add
+
+CollectionViewController.m
+file
+
+
+
+add
+
+DetailViewController.h
+file
+
+
+
+add
+
+PicsRootViewController.h
+file
+
+
+
+add
+
+InsureViewController.h
+file
+
+
+
+add
+
+MyModel.h
+file
+
+
+
+add
+
+DetailViewController.m
+file
+
+
+
+add
+
+PicCell.xib
+file
+
+
+
+add
+
+PicsRootViewController.m
+file
+
+
+
+add
+
+VideoCell.h
+file
+
+
+
+add
+
+MMProgressHUD
+dir
+
+
+
+add
+
+InsureViewController.m
+file
+
+
+
+add
+
+BankViewController.h
+file
+
+
+
+add
+
+MyModel.m
+file
+
+
+
+add
+
+PicCell.h
+file
+
+
+
+add
+
+VideoCell.m
+file
+
+
+
+add
+
+NewsCell.h
+file
+
+
+
+add
+
+DiscussViewController.h
+file
+
+
+
+add
+
+BankViewController.m
+file
+
+
+
+add
+
+pic_cell_bg.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+PicCell.m
+file
+
+
+
+add
+
+NewsCell.m
+file
+
+
+
+add
+
+ContainerViewController.h
+file
+
+
+
+add
+
+DiscussViewController.m
+file
+
+
+
+add
+
+ContainerViewController.m
+file
+
+
+
+add
+
+magazine.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+

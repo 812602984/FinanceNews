@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3E628AD5-629A-4035-AD6D-18B6E54C77D8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5d3329c2-f93a-4d14-bc89-be5018d5e5f8++4954</key>
+		<string>svn://10.8.151.215/zz1504/1/%2525E5%2525BD%2525AD%2525E5%2525B0%252591%2525E6%2525AD%2525A6/FinanceNews%2525203.0</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FinanceNews.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5d3329c2-f93a-4d14-bc89-be5018d5e5f8++4954</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>5d3329c2-f93a-4d14-bc89-be5018d5e5f8++4954</key>
+		<string>svn://10.8.151.215</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://10.8.151.215/zz1504/1/%2525E5%2525BD%2525AD%2525E5%2525B0%252591%2525E6%2525AD%2525A6/FinanceNews%2525203.0/FinanceNews.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5d3329c2-f93a-4d14-bc89-be5018d5e5f8++4954</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5d3329c2-f93a-4d14-bc89-be5018d5e5f8++4954</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FinanceNews%203.0-%E5%9B%BE%E7%89%87%E6%BB%9A%E5%8A%A8</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoCell" id="gTV-IL-0wX" customClass="VideoCell">
+            <rect key="frame" x="0.0" y="0.0" width="136" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="136" height="135"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IpW-ND-3tB">
+                        <rect key="frame" x="9" y="7" width="116" height="92"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="116" id="bXp-ad-hLs"/>
+                            <constraint firstAttribute="height" constant="92" id="zBF-pM-Z4K"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkm-61-Ipd">
+                        <rect key="frame" x="50" y="35" width="38" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="38" id="4ye-Uh-ijf"/>
+                            <constraint firstAttribute="height" constant="34" id="Ns7-A2-gHG"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="video_play.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="playClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="O5Q-LB-baw"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wr-jD-O98">
+                        <rect key="frame" x="9" y="106" width="116" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="116" id="VVZ-8f-cYw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="lkm-61-Ipd" firstAttribute="centerY" secondItem="IpW-ND-3tB" secondAttribute="centerY" constant="-1" id="AYt-B3-scT"/>
+                <constraint firstAttribute="trailing" secondItem="IpW-ND-3tB" secondAttribute="trailing" constant="11" id="WCh-s8-cHI"/>
+                <constraint firstItem="0wr-jD-O98" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="9" id="XVn-3E-geS"/>
+                <constraint firstItem="lkm-61-Ipd" firstAttribute="centerX" secondItem="IpW-ND-3tB" secondAttribute="centerX" constant="2" id="ZjN-Pl-QRY"/>
+                <constraint firstItem="0wr-jD-O98" firstAttribute="top" secondItem="IpW-ND-3tB" secondAttribute="bottom" constant="7" id="iRT-Sd-hFy"/>
+                <constraint firstItem="IpW-ND-3tB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="9" id="n5u-Ll-JZu"/>
+                <constraint firstAttribute="trailing" secondItem="0wr-jD-O98" secondAttribute="trailing" constant="11" id="trU-IE-w0y"/>
+                <constraint firstItem="IpW-ND-3tB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="7" id="urU-5i-JJ0"/>
+            </constraints>
+            <size key="customSize" width="146" height="48"/>
+            <connections>
+                <outlet property="imageView" destination="IpW-ND-3tB" id="dWj-v2-F4F"/>
+                <outlet property="titleLabel" destination="0wr-jD-O98" id="9do-zV-ZJ8"/>
+            </connections>
+            <point key="canvasLocation" x="197" y="345.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="video_play.png" width="67" height="67"/>
+    </resources>
+</document>
