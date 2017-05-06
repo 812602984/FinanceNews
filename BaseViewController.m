@@ -14,7 +14,7 @@
 #import "SingleView.h"
 
 #define kScreenSize [UIScreen mainScreen].bounds.size
-#define kUrl @"http://wapi.hexun.com/Api_newsXml_v1.cc?appId=1&pid=%@&pc=20&pn=1"
+#define kUrl @"http://wapi.hexun.com/Api_newsXml_v1.cc?appId=1&pid=%@&pc=20&pn=%zd"
 
 @interface BaseViewController ()<UITableViewDataSource,UITableViewDelegate>
 {

@@ -187,7 +187,7 @@
 
 //下载数据
 -(void)loadData:(NSString *)pid page:(NSInteger)page{
-    NSString *picUrl = [NSString stringWithFormat:kPicUrl,pid];
+    NSString *picUrl = [NSString stringWithFormat:kPicUrl,pid,page];
     
     [MMProgressHUD setPresentationStyle:MMProgressHUDPresentationStyleDrop];
     [MMProgressHUD showWithTitle:@"数据下载" status:@"loading..."];

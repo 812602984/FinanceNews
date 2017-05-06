@@ -11,9 +11,9 @@
 
 #define kScreenSize [UIScreen mainScreen].bounds.size
 //图片url
-#define kPicUrl @"http://wapi.hexun.com/Api_picList.cc?pid=%@&pn=1&pc=20"
+#define kPicUrl @"http://wapi.hexun.com/Api_picList.cc?pid=%@&pn=%zd&pc=20"
 //视频url
-#define kVideoUrl @"http://wapi.hexun.com/Api_videoList.cc?pid=%@&pn=1&pc=20"
+#define kVideoUrl @"http://wapi.hexun.com/Api_videoList.cc?pid=%@&pn=%zd&pc=20"
 //视频详情url
 #define kVideoDetailUrl @"http://wapi.hexun.com/Api_videoDetail.cc?newsId=%@"
 

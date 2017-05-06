@@ -195,7 +195,7 @@
 
 //下载数据
 -(void)loadData:(NSString *)pid page:(NSInteger)page{
-    NSString *videoUrl = [NSString stringWithFormat:kVideoUrl,pid];
+    NSString *videoUrl = [NSString stringWithFormat:kVideoUrl,pid,page];
     
     __weak typeof(self) weakSelf = self;
     
