@@ -13,6 +13,9 @@
 {
     UIWebView *_webView;
 }
+    
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topMargin;
+    
 @end
 
 @implementation LoginViewController
@@ -24,8 +27,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 55, kScreenSize.width, kScreenSize.height-55)];
+    
+    if (KIsiPhoneX) {
+        self.topMargin.constant = 44;
+    }
+    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, kStatusBarH + 35, kScreenSize.width, kScreenSize.height-(kStatusBarH + 35))];
     NSString *urlStr = @"https://reg.hexun.com/h5/login.aspx?client=android&fromhost=HX_Mobile_1003&top=n";
     NSURL *url = [NSURL URLWithString:urlStr];
     [_webView loadRequest:[NSURLRequest requestWithURL:url]];

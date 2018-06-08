@@ -7,31 +7,34 @@
 //
 
 #import "SideViewController.h"
+
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define KIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
 @interface SideViewController ()<UIGestureRecognizerDelegate>{
-UIView *_baseView;//目前是_baseView
-UIView *_currentView;//其实就是rootViewController.view
-
-UIPanGestureRecognizer *_panGestureRecognizer;
-
-CGPoint _startPanPoint;
-CGPoint _lastPanPoint;
-BOOL _panMovingRightOrLeft;//true是向右，false是向左
-
-UIButton *_coverButton;
-
-BOOL _isInit;//是否是初始化
+    UIView *_baseView;//目前是_baseView
+    UIView *_currentView;//其实就是rootViewController.view
+    
+    UIPanGestureRecognizer *_panGestureRecognizer;
+    
+    CGPoint _startPanPoint;
+    CGPoint _lastPanPoint;
+    BOOL _panMovingRightOrLeft;//true是向右，false是向左
+    
+    UIButton *_coverButton;
+    
+    BOOL _isInit;//是否是初始化
 }
-
-@end
+    
+    @end
 
 @implementation SideViewController
-//加按钮，点击后可以出现侧边栏
+    //加按钮，点击后可以出现侧边栏
 -(void)addButton{
     
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 30)];
+    CGFloat originY = KIsiPhoneX ? 44 : 20;
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, originY, SCREEN_WIDTH, 30)];
     view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"viewbg.png"]];
     
     [self.rootViewController.view addSubview:view];
@@ -60,59 +63,60 @@ BOOL _isInit;//是否是初始化
     rightButton.tag = 101;
     [rightButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     [view addSubview:rightButton];
-  
-  
+    
+    
 }
-
+    
 -(void)btnClick:(UIButton *)btn{
     if (btn.tag == 100) {
         [self showLeftViewController:YES];
-
+        
     }else{
         [self showRightViewController:YES];
     }
 }
-
+    
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-        _leftViewShowWidth = 267;
-        _rightViewShowWidth = 267;
-
-        _animationDuration = 0.35;
-        _showBoundsShadow = true;
-        
-        _panGestureRecognizer = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(pan:)];
-        [_panGestureRecognizer setDelegate:self];
-        
-        _panMovingRightOrLeft = false;
-        _lastPanPoint = CGPointZero;
-        
-        _coverButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
-        [_coverButton addTarget:self action:@selector(hideSideViewController) forControlEvents:UIControlEventTouchUpInside];
-        
-        _isInit = true;
+    {
+        self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+        if (self) {
+            // Custom initialization
+            _leftViewShowWidth = 267;
+            _rightViewShowWidth = 267;
+            
+            _animationDuration = 0.35;
+            _showBoundsShadow = true;
+            
+            _panGestureRecognizer = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(pan:)];
+            [_panGestureRecognizer setDelegate:self];
+            
+            _panMovingRightOrLeft = false;
+            _lastPanPoint = CGPointZero;
+            
+            _coverButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+            [_coverButton addTarget:self action:@selector(hideSideViewController) forControlEvents:UIControlEventTouchUpInside];
+            
+            _isInit = true;
+        }
+        return self;
     }
-    return self;
-}
-
+    
 - (id)init{
     return [self initWithNibName:nil bundle:nil];
 }
-
+    
 - (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    _baseView              = self.view;
-    [_baseView setBackgroundColor:[UIColor colorWithRed:0.5 green:0.6 blue:0.8 alpha:1]];
-    self.needSwipeShowMenu = true;
-   
-    [self addButton];
-}
-
+    {
+        [super viewDidLoad];
+        
+        self.view.backgroundColor = [UIColor whiteColor];
+        _baseView              = self.view;
+        [_baseView setBackgroundColor:[UIColor colorWithRed:0.5 green:0.6 blue:0.8 alpha:1]];
+        self.needSwipeShowMenu = true;
+        
+        [self addButton];
+    }
+    
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     if (!self.rootViewController) {
@@ -123,14 +127,14 @@ BOOL _isInit;//是否是初始化
         _isInit=false;
     }
 }
-
+    
 - (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-//设置主页面
+    {
+        [super didReceiveMemoryWarning];
+        // Dispose of any resources that can be recreated.
+    }
+    
+    //设置主页面
 - (void)setRootViewController:(UIViewController *)rootViewController{
     if (_rootViewController!=rootViewController) {
         if (_rootViewController) {
@@ -149,8 +153,8 @@ BOOL _isInit;//是否是初始化
     //设置主视图控制器的状态栏为黑底白字
     _rootViewController.view.backgroundColor = [UIColor blackColor];
 }
-
-////设置左导航
+    
+    ////设置左导航
 -(void)setLeftViewController:(UIViewController *)leftViewController{
     if (_leftViewController!=leftViewController) {
         if (_leftViewController) {
@@ -162,8 +166,8 @@ BOOL _isInit;//是否是初始化
         }
     }
 }
-
-//设置右导航
+    
+    //设置右导航
 -(void)setRightViewController:(UIViewController *)rightViewController{
     if (_rightViewController!=rightViewController) {
         if (_rightViewController) {
@@ -175,7 +179,7 @@ BOOL _isInit;//是否是初始化
         }
     }
 }
-
+    
 - (void)setNeedSwipeShowMenu:(BOOL)needSwipeShowMenu{
     _needSwipeShowMenu = needSwipeShowMenu;
     if (needSwipeShowMenu) {
@@ -184,7 +188,7 @@ BOOL _isInit;//是否是初始化
         [_baseView removeGestureRecognizer:_panGestureRecognizer];
     }
 }
-
+    
 - (void)showShadow:(BOOL)show{
     _currentView.layer.shadowOpacity    = show ? 0.8f : 0.0f;
     if (show) {
@@ -194,7 +198,7 @@ BOOL _isInit;//是否是初始化
         _currentView.layer.shadowPath   = [UIBezierPath bezierPathWithRect:_currentView.bounds].CGPath;
     }
 }
-
+    
 -(void)resetCurrentViewToRootViewController{
     if (_currentView!=_rootViewController.view) {
         CGRect frame = CGRectZero;
@@ -218,7 +222,7 @@ BOOL _isInit;//是否是初始化
         
     }
 }
-
+    
 #pragma mark  ShowOrHideTheView
 - (void)willShowLeftViewController{
     if (!_leftViewController || _leftViewController.view.superview) {
@@ -240,8 +244,8 @@ BOOL _isInit;//是否是初始化
         [_leftViewController.view removeFromSuperview];
     }
 }
-
-//展示左边栏
+    
+    //展示左边栏
 - (void)showLeftViewController:(BOOL)animated{
     if (!_leftViewController) {
         return;
@@ -258,8 +262,8 @@ BOOL _isInit;//是否是初始化
         [self showShadow:_showBoundsShadow];
     }];
 }
-
-//展示右边栏
+    
+    //展示右边栏
 - (void)showRightViewController:(BOOL)animated{
     if (!_rightViewController) {
         return;
@@ -294,7 +298,7 @@ BOOL _isInit;//是否是初始化
 - (void)hideSideViewController{
     [self hideSideViewController:true];
 }
-
+    
 #pragma mark UIGestureRecognizerDelegate
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
     // Check for horizontal pan gesture
@@ -366,8 +370,8 @@ BOOL _isInit;//是否是初始化
         }
     }
 }
-
-//重写此方法可以改变动画效果,PS._currentView就是RootViewController.view
+    
+    //重写此方法可以改变动画效果,PS._currentView就是RootViewController.view
 - (void)layoutCurrentViewWithOffset:(CGFloat)xoffset{
     if (_showBoundsShadow) {
         _currentView.layer.shadowPath = [UIBezierPath bezierPathWithRect:_currentView.bounds].CGPath;
@@ -400,19 +404,19 @@ BOOL _isInit;//是否是初始化
     if (xoffset>0) {//向右滑的
         [_currentView setFrame:CGRectMake(xoffset-150, _baseView.bounds.origin.y + (totalHeight * (1 - scale) / 2), totalWidth * scale, totalHeight * scale)];
     }else{//向左滑的
-//        [_currentView setFrame:CGRectMake(_baseView.frame.size.width * (1 - scale) + xoffset, _baseView.bounds.origin.y + (totalHeight*(1 - scale) / 2), totalWidth * scale, totalHeight * scale)];
+        //        [_currentView setFrame:CGRectMake(_baseView.frame.size.width * (1 - scale) + xoffset, _baseView.bounds.origin.y + (totalHeight*(1 - scale) / 2), totalWidth * scale, totalHeight * scale)];
         [_currentView setFrame:CGRectMake(_baseView.frame.size.width * (1 - scale) + xoffset, 0, totalWidth * scale, SCREEN_HEIGHT)];
-
+        
     }
     //*/
 }
-
-//下面2个方法让状态栏显示黑低白字
+    
+    //下面2个方法让状态栏显示黑低白字
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
 }
-
+    
 - (BOOL)prefersStatusBarHidden
 {
     return NO;

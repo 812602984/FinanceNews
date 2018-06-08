@@ -23,7 +23,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *collectButton;
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
-
+    
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topMargin;
+    
 @end
 
 @implementation DetailViewController
@@ -46,7 +48,7 @@
 - (IBAction)collectClick:(id)sender {
     UIButton *btn = (UIButton *)sender;
     [btn setTitle:@"已收藏" forState:UIControlStateNormal];
-    btn.titleLabel.font = [UIFont fontWithName:nil size:14];
+    btn.titleLabel.font = [UIFont systemFontOfSize:14];
     [[DBManager sharedManager] insertModel:self.model];
 }
 
@@ -65,7 +67,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
-
+    if (KIsiPhoneX) {
+        self.topMargin.constant = 44;
+    }
     [self setButton];
     _manager = [AFHTTPRequestOperationManager manager];
     _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
@@ -75,7 +79,10 @@
     if (self.url) {
         [self loadRequest];
     }
-    [self addCommentView];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self addCommentView];
+    });
 }
 
 //评论模块
@@ -83,7 +90,7 @@
    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     [button setTitle:@"查看评论" forState:UIControlStateNormal];
-    button.titleLabel.font = [UIFont fontWithName:nil size:13];
+    button.titleLabel.font = [UIFont systemFontOfSize:13];
     button.frame = CGRectMake(_webView.frame.size.width-80, _webView.frame.size.height-40, 70, 30);
     [button addTarget:self action:@selector(scanComment) forControlEvents:UIControlEventTouchUpInside];
     [_webView addSubview:button];

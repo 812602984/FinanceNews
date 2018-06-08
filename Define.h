@@ -10,10 +10,20 @@
 #define FinanceNews_Define_h
 
 #define kScreenSize [UIScreen mainScreen].bounds.size
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define KIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define kRGB(r, g , b)     [UIColor colorWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:1];
+
+#define kStatusBarH (KIsiPhoneX ? 44 : 20)
+
+
 //图片url
-#define kPicUrl @"http://wapi.hexun.com/Api_picList.cc?pid=%@&pn=%zd&pc=20"
+#define kPicUrl @"http://wapi.hexun.com/Api_picList.cc?pid=%@&pn=%ld&pc=20"
 //视频url
-#define kVideoUrl @"http://wapi.hexun.com/Api_videoList.cc?pid=%@&pn=%zd&pc=20"
+#define kVideoUrl @"http://wapi.hexun.com/Api_videoList.cc?pid=%@&pn=%ld&pc=20"
 //视频详情url
 #define kVideoDetailUrl @"http://wapi.hexun.com/Api_videoDetail.cc?newsId=%@"
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04F639C420CAC4DD009064A0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 04F639C320CAC4DD009064A0 /* Podfile */; };
 		892000011B4D13150012C11C /* left_toggle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8920FFFE1B4D13150012C11C /* left_toggle@3x.png */; };
 		892000021B4D13150012C11C /* left_toggle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8920FFFF1B4D13150012C11C /* left_toggle.png */; };
 		892000031B4D13150012C11C /* left_toggle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 892000001B4D13150012C11C /* left_toggle@2x.png */; };
@@ -209,6 +210,7 @@
 		BCFA2AA31B241C7300824EA8 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFA2AA11B241C7300824EA8 /* NewsCell.m */; };
 		BCFA2AA41B241C7300824EA8 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCFA2AA21B241C7300824EA8 /* NewsCell.xib */; };
 		BCFA2AA81B24200100824EA8 /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFA2AA71B24200100824EA8 /* MyModel.m */; };
+		D029CB9637D7C602432561E2 /* libPods-FinanceNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA26583C8843089925B542C /* libPods-FinanceNews.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -222,6 +224,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04F639C320CAC4DD009064A0 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		04F639C520CAE96C009064A0 /* FinanceNews.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinanceNews.entitlements; sourceTree = "<group>"; };
+		3EA7775CE2BD3EDEE011090D /* Pods-FinanceNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinanceNews/Pods-FinanceNews.release.xcconfig"; sourceTree = "<group>"; };
 		892000001B4D13150012C11C /* left_toggle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left_toggle@2x.png"; sourceTree = "<group>"; };
 		892000041B4D14AB0012C11C /* viewbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viewbg.png; sourceTree = "<group>"; };
 		8920FFE91B4CD2940012C11C /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
@@ -264,6 +269,8 @@
 		89CF6BF01B4E4E1300B5F1A0 /* right_share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_share@2x.png"; sourceTree = "<group>"; };
 		89CF6BF11B4E4E1300B5F1A0 /* right_share@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_share@3x.png"; sourceTree = "<group>"; };
 		89CF6BF81B4E582B00B5F1A0 /* back_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_icon.png; sourceTree = "<group>"; };
+		9EA26583C8843089925B542C /* libPods-FinanceNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinanceNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB522AF899ABE415A46CEDA /* Pods-FinanceNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinanceNews/Pods-FinanceNews.debug.xcconfig"; sourceTree = "<group>"; };
 		BC114C271B423C8100494D8C /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		BC114C281B423C8100494D8C /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		BC114C2B1B42491100494D8C /* SearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultViewController.h; sourceTree = "<group>"; };
@@ -576,6 +583,7 @@
 				BC2468CE1B242FA000459D3D /* libxml2.dylib in Frameworks */,
 				BC28C0B71B42B6C5009E9F5A /* libSocialWechat.a in Frameworks */,
 				BC28C0B41B42B6C5009E9F5A /* libUMSocial_Sdk_ScreenShot_1.0.a in Frameworks */,
+				D029CB9637D7C602432561E2 /* libPods-FinanceNews.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,6 +709,15 @@
 			children = (
 			);
 			name = "清除缓存";
+			sourceTree = "<group>";
+		};
+		B6486AC5F4835D0A63BF0F90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAB522AF899ABE415A46CEDA /* Pods-FinanceNews.debug.xcconfig */,
+				3EA7775CE2BD3EDEE011090D /* Pods-FinanceNews.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC114C2A1B4248EC00494D8C /* 搜索 */ = {
@@ -1343,6 +1360,7 @@
 		BCFA2A731B24189E00824EA8 = {
 			isa = PBXGroup;
 			children = (
+				04F639C320CAC4DD009064A0 /* Podfile */,
 				89C276C71B50F56700AA6523 /* libz.dylib */,
 				89C276C51B50F55D00AA6523 /* libstdc++.dylib */,
 				89C276C31B50F55100AA6523 /* CoreTelephony.framework */,
@@ -1356,6 +1374,8 @@
 				BCFA2A7E1B24189E00824EA8 /* FinanceNews */,
 				BCFA2A921B24189F00824EA8 /* FinanceNewsTests */,
 				BCFA2A7D1B24189E00824EA8 /* Products */,
+				B6486AC5F4835D0A63BF0F90 /* Pods */,
+				E1FC953F3300F523A4728583 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1371,6 +1391,7 @@
 		BCFA2A7E1B24189E00824EA8 /* FinanceNews */ = {
 			isa = PBXGroup;
 			children = (
+				04F639C520CAE96C009064A0 /* FinanceNews.entitlements */,
 				BC24687C1B2423B800459D3D /* Controllers */,
 				BC24684E1B24233000459D3D /* Utility */,
 				BCFA2AA51B241FE800824EA8 /* Models */,
@@ -1441,6 +1462,14 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		E1FC953F3300F523A4728583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EA26583C8843089925B542C /* libPods-FinanceNews.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1448,9 +1477,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCFA2A991B24189F00824EA8 /* Build configuration list for PBXNativeTarget "FinanceNews" */;
 			buildPhases = (
+				67C7110CB921539FDE84FA50 /* [CP] Check Pods Manifest.lock */,
 				BCFA2A781B24189E00824EA8 /* Sources */,
 				BCFA2A791B24189E00824EA8 /* Frameworks */,
 				BCFA2A7A1B24189E00824EA8 /* Resources */,
+				5CFF3624E14882A100E767D1 /* [CP] Embed Pods Frameworks */,
+				6BD9F6D1F97E5631F8839DB9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1490,6 +1522,13 @@
 				TargetAttributes = {
 					BCFA2A7B1B24189E00824EA8 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 98UM9Z4HVC;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					BCFA2A8E1B24189F00824EA8 = {
 						CreatedOnToolsVersion = 6.1;
@@ -1522,6 +1561,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F639C420CAC4DD009064A0 /* Podfile in Resources */,
 				BC28C10B1B42B872009E9F5A /* Icon-40@3x.png in Resources */,
 				89B214861B4B82AC004D1B66 /* back.png in Resources */,
 				BCDFBD051B340000004574CD /* magazine.png in Resources */,
@@ -1618,6 +1658,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5CFF3624E14882A100E767D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FinanceNews/Pods-FinanceNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67C7110CB921539FDE84FA50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinanceNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BD9F6D1F97E5631F8839DB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FinanceNews/Pods-FinanceNews-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FinanceNews/Pods-FinanceNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BCFA2A781B24189E00824EA8 /* Sources */ = {
@@ -1845,9 +1939,14 @@
 		};
 		BCFA2A9A1B24189F00824EA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAB522AF899ABE415A46CEDA /* Pods-FinanceNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = FinanceNews/FinanceNews.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pingyong Ou (98UM9Z4HVC)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 98UM9Z4HVC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/qianfeng/Desktop/证书/牛/umeng_ios_social_sdk_4.2.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -1874,15 +1973,23 @@
 					"$(PROJECT_DIR)/umeng_ios_social_sdk_4.2.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/UMSocial_Shake_Sdk",
 					"$(PROJECT_DIR)/umeng_ios_social_sdk_4.2.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shao.financenews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c60e4d80-3ba4-4661-839a-bd0928da8214";
+				PROVISIONING_PROFILE_SPECIFIER = newsdistribution;
 			};
 			name = Debug;
 		};
 		BCFA2A9B1B24189F00824EA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA7775CE2BD3EDEE011090D /* Pods-FinanceNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = FinanceNews/FinanceNews.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pingyong Ou (98UM9Z4HVC)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 98UM9Z4HVC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/qianfeng/Desktop/证书/牛/umeng_ios_social_sdk_4.2.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -1909,7 +2016,10 @@
 					"$(PROJECT_DIR)/umeng_ios_social_sdk_4.2.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/UMSocial_Shake_Sdk",
 					"$(PROJECT_DIR)/umeng_ios_social_sdk_4.2.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shao.financenews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c60e4d80-3ba4-4661-839a-bd0928da8214";
+				PROVISIONING_PROFILE_SPECIFIER = newsdistribution;
 			};
 			name = Release;
 		};

@@ -28,7 +28,7 @@
     
     [self addBackButton];
     
-    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 64, kScreenSize.width, 40)];
+    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, kStatusBarH + 44, kScreenSize.width, 40)];
     searchBar.delegate = self;
     searchBar.placeholder = @"请输入新闻关键词";
     

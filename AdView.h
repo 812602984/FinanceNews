@@ -8,34 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AdView : UIScrollView
-{
-    NSTimer *_moveTime;  //循环滚动的周期时间
-    BOOL _isTimeUp;
+@interface AdView : UIView<UIScrollViewDelegate>
     
-}
+@property (nonatomic,strong) NSMutableArray *imageNames;  //可变数组，用来存储滚动图片的名字
+@property (nonatomic,strong) NSMutableArray *textArr;
 
-//循环滚动的三个视图
-@property (nonatomic) UIImageView *leftImageView;
-@property (nonatomic) UIImageView *centerImageView;
-@property (nonatomic) UIImageView *rightImageView;
-
-//3个label
-@property (nonatomic) UILabel *leftLabel;
-@property (nonatomic) UILabel *centerLabel;
-@property (nonatomic) UILabel *rightLabel;
-
-//3个url
-@property (nonatomic) NSString *leftUrl;
-@property (nonatomic) NSString *centerUrl;
-@property (nonatomic) NSString *rightUrl;
-
-
-@property (nonatomic) NSArray *imageArr;
-@property (nonatomic) NSArray *titleArr;
-@property (nonatomic) NSArray *urlArr;
-//循环滚动的周期时间
-
--(instancetype)initWithFrame:(CGRect)frame;
+@property (nonatomic,strong) NSArray *urlArr;
 
 @end

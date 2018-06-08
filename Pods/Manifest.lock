@@ -1,0 +1,21 @@
+PODS:
+  - JCore (1.2.0)
+  - JPush (3.0.9):
+    - JCore (~> 1.2.0)
+  - Masonry (1.0.2)
+  - MJRefresh (3.1.12)
+
+DEPENDENCIES:
+  - JPush (~> 3.0.9)
+  - Masonry (~> 1.0.2)
+  - MJRefresh (= 3.1.12)
+
+SPEC CHECKSUMS:
+  JCore: b52e3dd73625eec70afd1244bb9c41038aa06087
+  JPush: 48041e8c5ad2ef9b48709eb0888af9640b36e9b0
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+
+PODFILE CHECKSUM: 28d6931609152c80fee3c8d27441bfbd3f0c06c9
+
+COCOAPODS: 1.4.0
