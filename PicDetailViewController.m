@@ -9,11 +9,12 @@
 #import "PicDetailViewController.h"
 #import "PicScrollView.h"
 #import "Define.h"
-#import "UMSocial.h"
+//#import "UMSocial.h"
 
 #define kScreenSize [UIScreen mainScreen].bounds.size
 
-@interface PicDetailViewController ()<UMSocialUIDelegate>
+@interface PicDetailViewController ()
+//<UMSocialUIDelegate>
 {
     PicScrollView *_scrollView;
 }
@@ -79,7 +80,7 @@
             break;
         case 202:
         {   //分享
-            [UMSocialSnsService presentSnsIconSheetView:self appKey:@"55923a8767e58e5ab60023ff" shareText:_scrollView.shareLabel.text shareImage:_scrollView.shareImage shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren, UMShareToWechatTimeline,UMShareToEmail,UMShareToSms,UMShareToQQ,UMShareToQzone,nil] delegate:self];
+//            [UMSocialSnsService presentSnsIconSheetView:self appKey:@"55923a8767e58e5ab60023ff" shareText:_scrollView.shareLabel.text shareImage:_scrollView.shareImage shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren, UMShareToWechatTimeline,UMShareToEmail,UMShareToSms,UMShareToQQ,UMShareToQzone,nil] delegate:self];
 
         }
             break;

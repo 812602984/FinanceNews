@@ -14,6 +14,7 @@
 #import "RightViewController.h"
 #import "AppListViewController.h"
 #import "Define.h"
+//#import "UMSocial.h"
 
 //极光
 #import <JPUSHService.h>
@@ -21,9 +22,8 @@
 #import <UserNotifications/UserNotifications.h>
 #endif
 
-@interface AppDelegate ()
-    //<JPUSHRegisterDelegate>
-    
+@interface AppDelegate ()<JPUSHRegisterDelegate>
+
     @property (nonatomic, strong) UIWindow *topWindow;
     
     @end
@@ -33,6 +33,8 @@
     
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
     
     [self setThirdPartyWithOptions:launchOptions];
     
@@ -165,25 +167,32 @@
  
  // iOS 10 Support
  - (void)jpushNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)())completionHandler {
- // Required
- NSDictionary * userInfo = response.notification.request.content.userInfo;
- if([response.notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
- [JPUSHService handleRemoteNotification:userInfo];
- }
- completionHandler();  // 系统要求执行这个方法
+     // Required
+     NSDictionary * userInfo = response.notification.request.content.userInfo;
+     if([response.notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
+     [JPUSHService handleRemoteNotification:userInfo];
+     }
+     completionHandler();  // 系统要求执行这个方法
+     
+     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+     [JPUSHService setBadge:0];
  }
  
  - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
  
- // Required, iOS 7 Support
- [JPUSHService handleRemoteNotification:userInfo];
- completionHandler(UIBackgroundFetchResultNewData);
+     // Required, iOS 7 Support
+     [JPUSHService handleRemoteNotification:userInfo];
+     completionHandler(UIBackgroundFetchResultNewData);
+     
+     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
  }
  
  - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
  
- // Required,For systems with less than or equal to iOS6
- [JPUSHService handleRemoteNotification:userInfo];
+     // Required,For systems with less than or equal to iOS6
+     [JPUSHService handleRemoteNotification:userInfo];
+     
+     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
  }
 
 @end

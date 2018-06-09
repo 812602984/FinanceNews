@@ -10,11 +10,12 @@
 #import "AFNetworking.h"
 #import "GDataXMLNode.h"
 #import "DBManager.h"
-#import "UMSocial.h"
+//#import "UMSocial.h"
 #import "Define.h"
 #import "CommentViewController.h"
 
-@interface DetailViewController ()<UMSocialUIDelegate,UIAlertViewDelegate,UIWebViewDelegate>
+@interface DetailViewController ()<UIAlertViewDelegate,UIWebViewDelegate>
+//UMSocialUIDelegate
 {
     AFHTTPRequestOperationManager *_manager;
     NSMutableArray *_dataArr;
@@ -55,14 +56,14 @@
 //分享
 - (IBAction)shareClick:(id)sender {
     
-    [UMSocialSnsService presentSnsIconSheetView:self appKey:@"55923a8767e58e5ab60023ff" shareText:_sharedtext shareImage:@"Icon.png" shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren, UMShareToWechatTimeline,UMShareToEmail,UMShareToSms,UMShareToQQ,UMShareToQzone,nil] delegate:self];
+//    [UMSocialSnsService presentSnsIconSheetView:self appKey:@"55923a8767e58e5ab60023ff" shareText:_sharedtext shareImage:@"Icon.png" shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren, UMShareToWechatTimeline,UMShareToEmail,UMShareToSms,UMShareToQQ,UMShareToQzone,nil] delegate:self];
 }
 
--(void)didFinishGetUMSocialDataResponse:(UMSocialResponseEntity *)response{
-    if (response.responseCode == UMSResponseCodeSuccess) {
-        NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
-    }
-}
+//-(void)didFinishGetUMSocialDataResponse:(UMSocialResponseEntity *)response{
+//    if (response.responseCode == UMSResponseCodeSuccess) {
+//        NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
+//    }
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
