@@ -1744,7 +1744,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = FinanceNews/FinanceNews.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Pingyong Ou (7P74ALMWN8)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pingyong Ou (7P74ALMWN8)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 98UM9Z4HVC;
@@ -1772,7 +1772,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = FinanceNews/FinanceNews.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Pingyong Ou (98UM9Z4HVC)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Pingyong Ou (98UM9Z4HVC)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 98UM9Z4HVC;
@@ -1797,6 +1797,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pingyong Ou (7P74ALMWN8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pingyong Ou (7P74ALMWN8)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1816,6 +1818,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pingyong Ou (98UM9Z4HVC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Pingyong Ou (98UM9Z4HVC)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

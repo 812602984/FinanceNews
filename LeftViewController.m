@@ -31,7 +31,9 @@
 }
 
 -(void)dataInit{
-    _dataArr = [NSMutableArray arrayWithArray:@[@"新闻",@"图片",@"行情",@"杂志",@"视频"]];
+//    _dataArr = [NSMutableArray arrayWithArray:@[@"新闻",@"图片",@"行情",@"杂志",@"视频"]];
+    _dataArr = [NSMutableArray arrayWithArray:@[@"新闻",@"图片",@"视频"]];
+
 }
 
 -(void)tableViewInit{
@@ -97,7 +99,7 @@
             [self presentViewController:picsRoot animated:YES completion:nil];
 
         }
-        case 4:{
+        case 2:{
             VideoViewController *video = [[VideoViewController alloc] init];
             video.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
             [self presentViewController:video animated:YES completion:nil];

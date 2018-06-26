@@ -33,21 +33,23 @@
 
 //设置状态条背景为黑色
 -(void)addView{
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenSize.width, 20)];
-    view.backgroundColor = [UIColor blackColor];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenSize.width, kStatusBarH)];
+    view.backgroundColor = kRGB(98, 189, 187);
     [self.view addSubview:view];
 }
 
 //加顶部视图
 -(void)addTopView{
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 20, kScreenSize.width, 35)];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, kStatusBarH, kScreenSize.width, 35)];
     view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"topviewbg.png"]];
     [self.view addSubview:view];
     
     //加按钮
-    NSArray *titleArr = @[@"返回",@"下载",@"分享",@"评论"];
+//    NSArray *titleArr = @[@"返回",@"下载",@"分享",@"评论"];
+    NSArray *titleArr = @[@"返回"];
+
     CGRect frame = CGRectMake(5, 0, 40, 30);
-    for (NSInteger i=0; i<4; i++) {
+    for (NSInteger i=0; i<titleArr.count; i++) {
         UIButton *button = [[UIButton alloc] initWithFrame:frame];
         button.tag = 200 + i;
         if (i == 0) {
@@ -57,7 +59,7 @@
             button.frame = frame;
         }
         [button setTitle:titleArr[i] forState:UIControlStateNormal];
-        button.titleLabel.font = [UIFont fontWithName:nil size:15];
+        button.titleLabel.font = [UIFont systemFontOfSize:15];
         [button addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         
         [view addSubview:button];

@@ -13,11 +13,11 @@
 #define kScreenSize [UIScreen mainScreen].bounds.size
 
 @implementation AdView
-    {
-        UIScrollView *_scrollView;     //滚动视图
-        UIPageControl *_pageControl;   //页码控制器
-        
-    }
+{
+    UIScrollView *_scrollView;     //滚动视图
+    UIPageControl *_pageControl;   //页码控制器
+    
+}
     
 -(void)setImageNames:(NSMutableArray *)imageNames{
     //[self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
@@ -72,9 +72,7 @@
     
     //imageView手势点击事件
 - (void)tapClick:(UITapGestureRecognizer *)tap
-    {
-        return;
-        
+    {        
         NSInteger tag = tap.view.tag;
         DetailViewController *detail = [[DetailViewController alloc] init];
         detail.url = self.urlArr[tag-200];
