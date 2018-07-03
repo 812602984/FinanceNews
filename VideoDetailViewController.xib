@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoDetailViewController">
@@ -18,68 +21,68 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="94" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05o-Kw-Rt3">
-                    <rect key="frame" x="0.0" y="20" width="600" height="35"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="35"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2g-5w-E3t">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2g-5w-E3t">
                             <rect key="frame" x="17" y="5" width="42" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="42" id="w58-m4-0yl"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title="返回">
-                                <color key="titleColor" red="0.0" green="0.37800417017500959" blue="0.78110139266304346" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.0" green="0.37800417017500959" blue="0.78110139266304346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="back:" destination="-1" eventType="touchUpInside" id="b4u-gF-jan"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4J6-4a-TjU">
-                            <rect key="frame" x="482" y="4" width="32" height="30"/>
+                            <rect key="frame" x="257" y="4" width="32" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="32" id="1g4-hD-Ux3"/>
                             </constraints>
                             <state key="normal" title="收藏">
-                                <color key="titleColor" red="0.0" green="0.38856564346992739" blue="0.80292544157608692" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.0" green="0.38856564346992739" blue="0.80292544157608692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="collectionClick:" destination="-1" eventType="touchUpInside" id="rSY-Fq-ic0"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQM-vX-FIl">
-                            <rect key="frame" x="538" y="4" width="34" height="30"/>
+                            <rect key="frame" x="313" y="4" width="34" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="34" id="8Wq-nx-kMf"/>
                                 <constraint firstAttribute="width" constant="34" id="WoD-8Q-Ult"/>
                             </constraints>
                             <state key="normal" title="分享">
-                                <color key="titleColor" red="0.0" green="0.36521328082464716" blue="0.75467051630434789" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.0" green="0.36521328082464716" blue="0.75467051630434789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="shareClick:" destination="-1" eventType="touchUpInside" id="Ecp-7e-ajz"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5b-sA-rQQ">
-                            <rect key="frame" x="424" y="5" width="36" height="30"/>
+                            <rect key="frame" x="199" y="5" width="36" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="36" id="8yi-ld-0HW"/>
                             </constraints>
                             <state key="normal" title="字号">
-                                <color key="titleColor" red="0.0" green="0.42570545471616061" blue="0.87967051630434778" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.0" green="0.42570545471616061" blue="0.87967051630434778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="aujustFont:" destination="-1" eventType="touchUpInside" id="jDA-3s-HWB"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.92179008149999997" green="0.074628700944591314" blue="0.07611266691659048" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.92179008149999997" green="0.074628700944591314" blue="0.07611266691659048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="H5b-sA-rQQ" firstAttribute="top" secondItem="05o-Kw-Rt3" secondAttribute="top" constant="5" id="2eW-Ps-OVC"/>
                         <constraint firstItem="j2g-5w-E3t" firstAttribute="leading" secondItem="05o-Kw-Rt3" secondAttribute="leading" constant="17" id="2mH-9i-olV"/>
@@ -107,12 +110,12 @@
                         <constraint firstAttribute="width" constant="584" id="vDc-24-eEI"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BPI-b2-aDg">
                     <rect key="frame" x="0.0" y="117" width="600" height="1"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.5"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="L9Y-DO-g1R"/>
@@ -131,7 +134,7 @@
                         <constraint firstAttribute="height" constant="46" id="N4S-Zq-WYP"/>
                     </constraints>
                     <state key="normal" backgroundImage="startPlay.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="playClick:" destination="-1" eventType="touchUpInside" id="gph-A2-Qcr"/>
@@ -139,7 +142,7 @@
                 </button>
                 <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kTv-5R-xSh">
                     <rect key="frame" x="8" y="313" width="584" height="279"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </webView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isi-33-ezQ">
                     <rect key="frame" x="14" y="65" width="571" height="31"/>
@@ -148,7 +151,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Isi-33-ezQ" secondAttribute="trailing" constant="15" id="0D9-Gm-wU4"/>
                 <constraint firstItem="nKC-St-ycf" firstAttribute="centerX" secondItem="ZCn-vz-xHr" secondAttribute="centerX" constant="1" id="4DO-8C-5qs"/>
@@ -174,7 +177,7 @@
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
-            <point key="canvasLocation" x="362" y="180.5"/>
+            <point key="canvasLocation" x="18" y="117"/>
         </view>
     </objects>
     <resources>
